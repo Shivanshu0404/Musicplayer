@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/playlist.svg" alt="playlist" id="playlist-img">
+        <h2>Sound Sphere</h2>
+        <img src="images/music.svg" alt="music" id="music-img">
+    </header>
+    <main>
+        <div class="left">
+<div class="song-image">
+<img src="/images/musicanim.webp" alt="anim" id="musicanim">
+</div>
+<div class="volume-div">
+    <div class="volume-img">
+        <img src="/images/volume.svg" alt="volume" id="vol-svg" >
+    </div>
+    <input type="range" id="volume-range" onchange="volume()">
+    
+</div>
+        </div>
+        <div class="right">
+<div class="details">
+    <h3 id="song-name"> </h3>
+    <h5 id="song-singer"></h5>
+</div>
+<input type="range" id="song-duration" onchange="duration()">
+<div class="controls">
+    <div class="prev-img">
+        <img src="images/prev.svg" alt="prev" id="prev-img" onclick="previousSong()">
+    </div>
+    <div class="play-pause">
+        <img src="images/play.svg" alt="play" id="play-pause" onclick="playPause()">
+    </div>
+   <div class="next-img">
+    <img src="images/next.svg" alt="next" id="next-img" onclick="nextSong()">
+</div>
+    
+   
+</div>
+        </div>
+        <div class="playlist">
+            <div class="playlist-song">
+             <img src="images/cartoon on on.jpg" alt="img">
+             <div class="song-details">
+                <h2>Cartoon on-on</h2>
+                <h5>Daniel Levi</h5>
+             </div>
+            </div>
+            <div class="playlist-song">
+                <img src="images/stereo.png" alt="img">
+                <div class="song-details">
+                   <h2>Stereo Hearts</h2>
+                   <h5>Gym Class Heroes</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="images/lavender.jpg" alt="img">
+             <div class="song-details">
+                <h2>Lavender</h2>
+                <h5>Azoozkie</h5>
+             </div>
+            </div>
+            <div class="playlist-song">
+                <img src="images/image4.jpg" alt="img">
+                <div class="song-details">
+                   <h2>Royalty</h2>
+                   <h5>Song by Egzod, Maestro Chives, and Neoni</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+ <script src="script.js"></script>   
+</body>
+</html>
