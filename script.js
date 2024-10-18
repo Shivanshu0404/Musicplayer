@@ -3,6 +3,7 @@ let songSinger=document.querySelector("#song-singer")
 let songImage=document.querySelector(".song-image")
 let playPauseImg=document.querySelector("#play-pause")
 let volumeRange=document.querySelector("#volume-range")
+let  Volumemute=document.querySelector(".volume-img")
 let songRange=document.querySelector("#song-duration")
 let volSvg=document.querySelector("#vol-svg")
 let musicAnim=document.querySelector("#musicanim")
@@ -124,4 +125,18 @@ playlistSong.forEach((song,index)=>{
         playlistImg.src="images/playlist.svg"
 
     })
+})
+
+Volumemute.addEventListener("click",()=>{
+   if(volSvg.src="images/volume.svg"){
+    volSvg.src="images/mute.svg"
+    track.volume=0
+   }
+   
+})
+Volumemute.addEventListener("dblclick",()=>{
+    if(volSvg.src="images/mute.svg"){
+        volSvg.src="images/volume.svg"
+        track.volume=volumeRange.value/100;
+       }
 })
